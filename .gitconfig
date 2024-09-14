@@ -1,0 +1,24 @@
+[user]
+	email = sangholee45@outlook.com
+	name = Sangho Lee
+[color]
+	ui = auto
+[merge]
+    tool = diffview
+[mergetool]
+    prompt = false
+    keepBackup = false
+[mergetool "diffview"]
+    cmd = nvim -n -c "DiffviewOpen" "$MERGE"
+[core]
+	editor = nvim
+	eol = lf
+	autocrlf = input
+	whitespace = tabwidth=4,space-before-tab,trailing-space
+#	whitespace = tabwidth=4,space-before-tab,trailing-space,indent-with-non-tab
+	pager = less -x1,5
+	filemode = false
+[diff]
+	compactionHeuristic = true
+[rerere]
+    enabled = false
