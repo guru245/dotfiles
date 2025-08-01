@@ -117,8 +117,6 @@ if ! shopt -oq posix; then
 fi
 
 
-export SCREENDIR=/home/guru245/screen
-
 ####################### To connect to GitHub with SSH ##########################
 env=~/.ssh/agent.env
 agent_load_env () { test -f "$env" && . "$env" >| /dev/null ; }
